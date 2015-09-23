@@ -1,2 +1,2 @@
 # tbr-totem
-Totem child-theme for Beans.
+Totem is a child-theme for Beans.

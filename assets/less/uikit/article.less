@@ -1,0 +1,45 @@
+// Variables modifiers
+// ========================================================================
+
+@article-title-font-size:                       50px;
+@article-title-line-height:                     60px;
+@article-title-font-weight:                     300;
+
+@article-lead-font-size:                        20px;
+@article-lead-line-height:                      31px;
+@article-lead-font-weight:                      300;
+
+
+/* Article modifiers
+ ========================================================================== */
+
+
+/* Desktop and smaller */
+@media (max-width: @breakpoint-xlarge) {
+
+    body .uk-article-title {
+    	font-size: ( @article-title-font-size * 85 ) / 100;
+    	line-height: ( @article-title-line-height * 85 ) / 100;
+    }
+
+}
+
+/* Tablet and smaller */
+@media (max-width: @breakpoint-medium) {
+
+    body .uk-article-title {
+    	font-size: ( @article-title-font-size * 75 ) / 100;
+    	line-height: ( @article-title-line-height * 75 ) / 100;
+    }
+
+}
+
+/* Phone landscape and smaller */
+@media (max-width: @breakpoint-small-max) {
+
+    body .uk-article-title {
+    	font-size: ( @article-title-font-size * 65 ) / 100;
+    	line-height: ( @article-title-line-height * 65 ) / 100;
+    }
+
+}

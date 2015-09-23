@@ -1,0 +1,126 @@
+/* Variables
+ ========================================================================== */
+
+@tm-block-gutter-large-vertical:  50px;
+@tm-block-gutter-xlarge-vertical: 60px;
+
+/* Font
+ ========================================================================== */
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,700,300italic,400italic,500italic);
+
+
+/* Header
+ ========================================================================== */
+.tm-header {
+  min-height: 500px;
+}
+
+.tm-overlay-navigation {
+	padding: 40px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 0 0 @global-border-radius * 2 @global-border-radius * 2;
+  box-shadow: 0 0 4px 0 rgba(0,0,0,0.4);
+}
+
+.tm-site-branding a {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Phone landscape and smaller */
+@media (max-width: @breakpoint-small-max) {
+
+  .tm-primary-menu {
+  	top: 4px;
+		right: @utility-container-padding-horizontal;
+	}
+
+  .tm-header {
+    min-height: 300px;
+    display: block;
+    text-align: left;
+	}
+
+	.tm-overlay-navigation {
+		padding: 20px;
+	}
+
+}
+
+
+/* Main
+ ========================================================================== */
+
+.tm-main {
+	background: #fff;
+}
+
+
+/* Content
+ ========================================================================== */
+
+.tm-content h2:not( .uk-article-title ),
+.tm-content .h2:not( .uk-article-title ),
+.search h2.uk-article-title {
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	border-bottom: 5px solid #F6F6F6;
+}
+
+.search h2.uk-article-title {
+	font-size: 30px;
+	line-height: 40px;
+}
+
+
+/* Sidebar
+ ========================================================================== */
+
+.tm-secondary[class*="uk-pull"]:not(.uk-grid-margin) {
+	text-align: right;
+}
+
+
+/* Comments
+ ========================================================================== */
+
+.tm-comments > h2 {
+	font-size: 30px;
+	line-height: 39px;
+}
+
+.tm-comments .comment-reply-title {
+	font-size: 20px;
+	line-height: 26px;
+}
+
+.tm-comments textarea {
+	height: 190px;
+}
+
+
+/* Widgets
+ ========================================================================== */
+
+.tm-widget .post-date {
+  font-size: @text-small-font-size;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.widget_tag_cloud .tagcloud a {
+  margin: 0 2px 5px 0;
+}
+
+.tm-widget li {
+  line-height: 26px;
+}
+
+.tm-widget .tm-count {
+  min-width: 12px;
+  font-size: @text-small-font-size;
+  color: #B2B3B5;
+  display: inline-block;
+  text-align: right;
+}
