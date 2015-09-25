@@ -1,5 +1,12 @@
 <?php
 
+// Include Beans
+require_once( get_template_directory() . '/lib/init.php' );
+
+// Remove Beans Default Styling
+remove_theme_support( 'beans-default-styling' );
+
+
 // Enqueue uikit assets
 beans_add_smart_action( 'beans_uikit_enqueue_scripts', 'totem_enqueue_uikit_assets', 7 );
 
@@ -9,10 +16,10 @@ function totem_enqueue_uikit_assets() {
 	beans_uikit_enqueue_components( array( 'flex' ) );
 
 	// Enqueue uikit overwrite theme folder
-	beans_uikit_enqueue_theme( 'totem', BEANS_THEME_PATH . 'less/uikit' );
+	beans_uikit_enqueue_theme( 'totem', get_stylesheet_directory_uri() . '/assets/less/uikit' );
 
 	// Add the theme style as a uikit fragment to have access to all the variables
-	beans_compiler_add_fragment( 'uikit', BEANS_THEME_PATH . 'less/style.less', 'less' );
+	beans_compiler_add_fragment( 'uikit', get_stylesheet_directory_uri() . '/assets/less/style.less', 'less' );
 
 }
 
