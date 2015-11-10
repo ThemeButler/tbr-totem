@@ -3,6 +3,7 @@
 // Include Beans
 require_once( get_template_directory() . '/lib/init.php' );
 
+
 // Remove Beans Default Styling
 remove_theme_support( 'beans-default-styling' );
 
@@ -23,6 +24,7 @@ function totem_enqueue_uikit_assets() {
 
 }
 
+
 // Remove page post type comment support
 beans_add_smart_action( 'init', 'totem_post_type_support' );
 
@@ -31,6 +33,7 @@ function totem_post_type_support() {
 	remove_post_type_support( 'page', 'comments' );
 
 }
+
 
 // Setup document fragements, markups and attributes
 beans_add_smart_action( 'beans_before_load_document', 'totem_setup_document' );
@@ -95,6 +98,7 @@ function totem_setup_document() {
 
 }
 
+
 // Modify beans layout (filter)
 beans_add_smart_action( 'beans_layout_grid_settings', 'totem_layout_grid_settings' );
 
@@ -108,6 +112,7 @@ function totem_layout_grid_settings( $layouts ) {
 
 }
 
+
 // Modify beans default layout (filter)
 beans_add_smart_action( 'beans_default_layout', 'totem_default_layout' );
 
@@ -117,6 +122,7 @@ function totem_default_layout( $layouts ) {
 
 }
 
+
 // Modify the categories widget count (filter)
 beans_add_smart_action( 'beans_widget_count_output', 'totem_widget_counts' );
 
@@ -125,6 +131,7 @@ function totem_widget_counts() {
 	return '$2';
 
 }
+
 
 // Modify the tags cloud widget (filter)
 beans_add_smart_action( 'wp_generate_tag_cloud', 'totem_widget_tags_cloud' );
@@ -150,6 +157,7 @@ function totem_comment_form_defaults( $args ) {
 
 }
 
+
 // Modify comment title
 beans_add_smart_action( 'beans_comment_title_append_markup', 'totem_comment_title_prefix' );
 
@@ -165,6 +173,7 @@ function totem_comment_title_prefix() {
 
 }
 
+
 // Add avatar uikit circle class (filter)
 beans_add_smart_action( 'get_avatar', 'totem_avatar' );
 
@@ -173,6 +182,7 @@ function totem_avatar( $output ) {
 	return str_replace( "class='avatar", "class='avatar uk-border-circle", $output ) ;
 
 }
+
 
 // Add footer content
 add_filter( 'beans_footer_credit_right_text_output', 'totem_footer' );
