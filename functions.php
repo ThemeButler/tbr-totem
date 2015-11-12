@@ -36,7 +36,7 @@ function totem_post_type_support() {
 
 
 // Setup document fragements, markups and attributes
-beans_add_smart_action( 'beans_before_load_document', 'totem_setup_document' );
+beans_add_smart_action( 'wp', 'totem_setup_document' );
 
 function totem_setup_document() {
 
