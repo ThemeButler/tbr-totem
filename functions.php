@@ -184,7 +184,7 @@ function totem_avatar( $output ) {
 }
 
 
-// Add footer content
+// Add footer content (filter)
 beans_add_smart_action( 'beans_footer_credit_right_text_output', 'totem_footer' );
 
 function totem_footer() { ?>
