@@ -191,4 +191,4 @@ function totem_footer() { ?>
 
   <a href="http://www.themebutler.com/themes/totem/" target="_blank" title="Totem theme for WordPress">Totem</a> theme for <a href="http://wordpress.org" target="_blank">WordPress</a>. Built-with <a href="http://www.getbeans.io/" title="Beans Framework for WordPress" target="_blank">Beans</a>.
 
-<? }
+<?php }
