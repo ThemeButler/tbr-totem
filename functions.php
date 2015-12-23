@@ -84,9 +84,6 @@ function totem_setup_document() {
 
 	// Comment form
 	beans_add_attribute( 'beans_comment_form_submit', 'class', 'uk-button-large' );
-	beans_replace_attribute( 'beans_comment_fields_wrap', 'class', 'uk-width-medium-1-1', 'uk-width-medium-4-10' );
-	beans_replace_attribute( 'beans_comment_form', 'class', 'uk-width-medium-1-3', 'uk-width-medium-1-1' );
-
 	if ( !is_user_logged_in() )
 		beans_replace_attribute( 'beans_comment_form_comment', 'class', 'uk-width-medium-1-1', 'uk-width-medium-6-10' );
 
